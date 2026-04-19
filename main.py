@@ -29,6 +29,17 @@ cry: cry""")
         else:
             print("You don't know where the wires go anymore")
 
+    elif starting_computer.lower() == "add memory":
+        mem_chance = random.randint(1, 10)
+        ran_mem = input("Enter a number 1-10: ")
+        if int(ran_mem) == mem_chance:
+            print("It Works... somehow")
+            print(computer)
+            break
+        else:
+            print("Its corrupted.")
+            break
+
     elif starting_computer.lower() == "kick":
         kick_chance = random.randint(1, 10)
         ran_kick = input("Enter a number 1-10: ")
